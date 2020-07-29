@@ -1,7 +1,7 @@
-namespace DateTimeUtils.UnitTest
+namespace DateTimeUtils.UnitTest.Services
 {
     using System;
-    using Services;
+    using DateTimeUtils.Services;
     using Xunit;
 
     public class DateTimeUtilsUnitTest
