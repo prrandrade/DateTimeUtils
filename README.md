@@ -1,9 +1,7 @@
 # DateTimeUtils
 
 [Introduction](#introduction)
-
 [Package installation](#package-installation)
-
 [Usage](#usage)
 
 # Introduction
