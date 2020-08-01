@@ -1,7 +1,7 @@
 ﻿namespace DateTimeUtils.Services
 {
     using System;
-    using Interefaces;
+    using Interfaces;
 
     public class DateTimeUtils : IDateTimeUtils
     {

@@ -1,4 +1,4 @@
-﻿namespace DateTimeUtils.Interefaces
+﻿namespace DateTimeUtils.Interfaces
 {
     using System;
 

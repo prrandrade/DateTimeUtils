@@ -1,6 +1,6 @@
 ﻿namespace DateTimeUtils
 {
-    using Interefaces;
+    using Interfaces;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.DependencyInjection.Extensions;
     using Services;

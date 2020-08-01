@@ -1,6 +1,6 @@
 ﻿namespace DateTimeUtils.UnitTest
 {
-    using Interefaces;
+    using Interfaces;
     using Microsoft.Extensions.DependencyInjection;
     using Xunit;
 
