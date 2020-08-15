@@ -1,6 +1,7 @@
 # DateTimeUtils
 
 - [Introduction](#introduction)
+- [Nuget Package](#nuget-package)
 - [Package installation](#package-installation)
 - [Usage](#usage)
 
@@ -8,7 +9,9 @@
 
 This project intends to resolve a problem taht many project have when dealing with business rules related to `DateTime.Now` - Unit tests that fails because they are running at a different date or time! The solution is simple - let's inject DateTime as a dependency!
 
-Nuget package: https://www.nuget.org/packages/DateTimeUtils/.
+# Nuget Package
+
+The nuget package **DateTimeUtils**  can be downloaded from https://www.nuget.org/packages/DateTimeUtils/.
 
 # Package Installation
 
@@ -53,9 +56,16 @@ With it, you can access five `DateTime` values (that can be mocked during Unit T
 
 ```csharp
 _dateTimeUtils.MinValue(); // same as DateTime.MinValue
-_dateTimeUtils.MaxValues(); // same as DateTime.MaxValue
+_dateTimeUtils.MaxValue(); // same as DateTime.MaxValue
+_dateTimeUtils.FromBinary(long value); // same as DateTime.FromBinary(value)
+
 _dateTimeUtils.Now(); // same as DateTime.Now
+_dateTimeUtils.NowToBinary(); // same as DateTime.Now.ToBinary()
+
 _dateTimeUtils.UtcNow(); // same as DateTime.UtcNow
+_dateTimeUtils.UtcNowToBinary(); // same as DateTime.UtcNow.ToBinary()
+
 _dateTimeUtils.Today(); // same as DateTime.Today
+_dateTimeUtils.TodayToBinary(); // same as DateTime.Today.ToBinary()
 ```
 
