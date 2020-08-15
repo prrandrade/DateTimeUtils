@@ -33,6 +33,20 @@ namespace DateTimeUtils.UnitTest.Services
         }
 
         [Fact]
+        public void FromBinary()
+        {
+            // arrange
+            var dateTime = DateTime.UtcNow;
+            var dateTimeUtils = new DateTimeUtils();
+
+            // act
+            var date = dateTimeUtils.FromBinary(dateTime.ToBinary());
+
+            // assert
+            Assert.Equal(dateTime, date);
+        }
+
+        [Fact]
         public void Now()
         {
             // arrange
@@ -43,6 +57,19 @@ namespace DateTimeUtils.UnitTest.Services
 
             // assert
             Assert.Equal(DateTime.Now, now, TimeSpan.FromMilliseconds(1));
+        }
+
+        [Fact]
+        public void NowToBinary()
+        {
+            // arrange
+            var dateTimeUtils = new DateTimeUtils();
+
+            // act
+            var now = dateTimeUtils.NowToBinary();
+
+            // assert
+            Assert.Equal(DateTime.Now, DateTime.FromBinary(now), TimeSpan.FromMilliseconds(1));
         }
 
         [Fact]
@@ -59,6 +86,19 @@ namespace DateTimeUtils.UnitTest.Services
         }
 
         [Fact]
+        public void UtcNowToBinary()
+        {
+            // arrange
+            var dateTimeUtils = new DateTimeUtils();
+
+            // act
+            var now = dateTimeUtils.UtcNowToBinary();
+
+            // assert
+            Assert.Equal(DateTime.UtcNow, DateTime.FromBinary(now), TimeSpan.FromMilliseconds(1));
+        }
+
+        [Fact]
         public void Today()
         {
             // arrange
@@ -69,6 +109,19 @@ namespace DateTimeUtils.UnitTest.Services
 
             // assert
             Assert.Equal(DateTime.Today, today);
+        }
+
+        [Fact]
+        public void TodayToBinary()
+        {
+            // arrange
+            var dateTimeUtils = new DateTimeUtils();
+
+            // act
+            var now = dateTimeUtils.TodayToBinary();
+
+            // assert
+            Assert.Equal(DateTime.Today, DateTime.FromBinary(now), TimeSpan.FromMilliseconds(1));
         }
     }
 }
