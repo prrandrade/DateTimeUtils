@@ -15,7 +15,7 @@ The nuget package **DateTimeUtils**  can be downloaded from https://www.nuget.or
 
 # Package Installation
 
-Using the native .NET Core dependency injection framework, the installation consists of a single extension method that adds the injection in a `IServiceCollection`. For a .NET Core API project, for example, the configuration is added on the `ConfigureServices` method.
+Using the native .NET 5.0 dependency injection framework, the installation consists of a single extension method that adds the injection in a `IServiceCollection`. For a .NET 5.0 API project, for example, the configuration is added on the `ConfigureServices` method.
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
